@@ -1,0 +1,39 @@
+.btn{
+		display:block;
+		border-radius: 4px;
+		background-color: black;
+		border: none;
+		color: white;
+		text-align: center;
+		font-size: 18px;
+		padding: 20px;
+		width: 100px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin-top: 20px;
+		
+	}
+
+	.btn:hover{
+		background-color: #E36720;
+		color: white;
+	}
+
+
+-------------------------------------------------------------------------------------------------------
+<header class="main-header">
+	<center> 
+		<div class="nav">
+			<a href="homepage1.jsp"> HOME </a>
+			
+			<a href="videos.jsp"> VIDEOS </a>
+			<a href="about.jsp"> ABOUT</a>
+			<a href="index.jsp">	
+			<button class="btn-div" type="submit" name="btn" >Log Out</button>
+			</a>
+			
+		</div>
+			
+		<h1 class="gym-name gym-name-large"> The Rock Fitness and More </h1>
+		
+	</header>

@@ -1,0 +1,52 @@
+home.jsp code change			
+
+				<%
+					if(session.getAttribute("user")!=null)
+					{
+						String user=(String)session.getAttribute("user");
+						out.println( user);
+					}
+					else{
+						response.sendRedirect("index.jsp");
+					}
+					if(request.getParameter("btn")!=null)
+					{
+						request.getSession();
+						
+						response.sendRedirect("index.jsp");
+						session.invalidate();
+					}
+				%>
+
+
+
+=================================================================================================
+
+color codes used : for orange -> #FF5733
+
+============================================
+
+for updating database
+String sql="UPDATE beta SET username=?, password=?, email=?, membership=? WHERE id=?";
+
+============================================
+
+for inserting record in membership column
+
+UPDATE admins
+SET  membership = 'Gold'
+WHERE username = 'exampleuser';
+
+============================================
+
+for renaming database table names
+ALTER TABLE customers
+RENAME TO clients;
+
+============================================
+
+for removing record from the database
+
+delete from users where id='6';
+
+============================================
